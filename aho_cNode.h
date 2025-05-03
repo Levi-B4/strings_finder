@@ -3,8 +3,9 @@
 
 class Aho_CNode{
 public:
-    Aho_CNode* successLink;
-    Aho_CNode* failLink;
+    Aho_CNode** successBranches = nullptr;
+    int numBranches = 0;
+    Aho_CNode* failLink = nullptr;
 
     char data;
 
@@ -18,6 +19,8 @@ public:
      * @param data - value to set as this node's data
      */
     Aho_CNode(char data);
+
+    void addBranches(char* branches, int numBranches);
 
     Aho_CNode& operator=(const char);
 

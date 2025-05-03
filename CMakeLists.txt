@@ -7,7 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(strings_finder main.cpp
     aho_cNode.h
-    aho_cnode.h aho_cnode.cpp)
+    aho_cnode.h aho_cnode.cpp
+    aho_corasick.h aho_corasick.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS strings_finder
