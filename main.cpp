@@ -1,22 +1,21 @@
-#include "aho_corasick.h"
-#include <cstring>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    // should maybe make max word size global or figure something out for how I want to set this
-    const int maxWordSize = 50;
-    const int numWords = 4;
-    const char* initWords[] = {"cat", "cab", "able", "bleed"};
+    string text = "This is test text made by me: Levi.\nAt least Levi left this large load of lazy, light code largly untouched.";
 
-    char** words = new char*[numWords];
-    for (int i = 0; i < numWords; ++i) {
-        words[i] = new char[maxWordSize];
-        strncpy(words[i], initWords[i], maxWordSize);
-    }
+    cout << text << endl;
 
-    Aho_corasick mytree = Aho_corasick(words, maxWordSize, numWords);
+    // add paterns
 
-    delete[] words;
+    // make trie
+
+    // search text
+
+    // output location of each pattern
+
+    return 0;
 }

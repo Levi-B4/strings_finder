@@ -1,3 +1,16 @@
+# Build artifacts
+build/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+*.app
+debug/
+release/
+
 # C++ objects and libs
 *.slo
 *.lo
